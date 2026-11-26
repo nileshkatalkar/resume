@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nilesh Katalkar | DevOps Engineer Resume</title>
-<meta name="description" content="DevOps engineer with 10+ years in IT infrastructure and networking. AWS, Docker, Terraform, CI/CD.">
+<meta name="description" content="DevOps engineer with 10+ years in IT infrastructure and networking. CI/CD, Docker, Kubernetes, monitoring, Ansible, AWS.">
 <style>
 :root{--bg:#f6f7f9;--card:#fff;--text:#1f2933;--muted:#5f6c7b;--accent:#0b6bcb;--line:#e3e7ec;--chip:#e8f1fb}
 @media (prefers-color-scheme:dark){:root{--bg:#10151b;--card:#18202a;--text:#e6ebf0;--muted:#9aa7b4;--accent:#5aa9f5;--line:#273240;--chip:#1c2e44}}
@@ -26,9 +26,11 @@ ul{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{background:var(--chip);color:var(--accent);padding:3px 12px;border-radius:999px;font-size:.88rem;font-weight:500}
 .skill{margin-bottom:12px}.skill b{display:block;font-size:.92rem;margin-bottom:5px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
 .proj{border:1px solid var(--line);border-radius:10px;padding:14px}
+.proj p{margin:6px 0 0;font-size:.93rem}
 .tag{font-size:.78rem;color:var(--muted)}
+.more{margin-top:14px;font-size:.93rem}
 footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:22px}
 @media print{body{background:#fff;color:#000}section,header{border:none;break-inside:avoid}.noprint{display:none}}
 </style>
@@ -40,26 +42,28 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:22px}
   <img src="profile.jpg" alt="Nilesh Katalkar" onerror="this.style.display='none'">
   <div>
     <h1>NILESH KATALKAR</h1>
-    <div class="role">DevOps Engineer | AWS | 10+ Years in IT Infrastructure</div>
+    <div class="role">DevOps Engineer | CI/CD · Docker · Kubernetes · AWS | 10+ Years in IT Infrastructure</div>
     <div class="contact">
       <span>📍 Mumbai, India</span>
-      <a href="mailto:nileshkatalkar2017@gmail.com">✉ nileshkatalkar2025@gmail.com</a>
+      <a href="mailto:nileshkatalkar2017@gmail.com">✉ nileshkatalkar2017@gmail.com</a>
       <a href="tel:+918291057172">📞 +91 82910 57172</a>
       <a href="https://www.linkedin.com/in/nilesh-katalkar-984385195/">LinkedIn</a>
-      <a href="https://nileshkatalkar.github.io/resume/">GitHub</a>
+      <a href="https://github.com/nileshkatalkar">GitHub</a>
     </div>
   </div>
 </header>
 
 <section>
   <h2>Summary</h2>
-  <p>IT infrastructure professional with 10+ years of experience in system administration, networking, and troubleshooting, now moving into DevOps. Completed DevOps with AWS training at Fusion Institute, Pune, and building hands-on projects in CI/CD, Infrastructure as Code, containers, and cloud deployment. CCNA certified with a strong networking foundation.</p>
+  <p>IT infrastructure professional with 10+ years of experience in system administration, networking, and troubleshooting, now moving into DevOps. Completed DevOps with AWS training at Fusion Institute, Pune, and built six hands-on projects covering CI/CD pipelines, containers, Kubernetes, monitoring, and configuration management. CCNA certified with a strong networking foundation. Currently learning Terraform and deploying these projects on AWS.</p>
 </section>
 
 <section>
   <h2>Technical Skills</h2>
-  <div class="skill"><b>Cloud</b><div class="chips"><span class="chip">AWS (EC2, S3, VPC, IAM, CloudWatch)</span><span class="chip">Azure (learning)</span><span class="chip">GCP (learning)</span></div></div>
-  <div class="skill"><b>DevOps &amp; Automation</b><div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span><span class="chip">Terraform</span><span class="chip">Docker</span></div></div>
+  <div class="skill"><b>CI/CD &amp; Automation</b><div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">GitHub Actions</span><span class="chip">Jenkins</span><span class="chip">Ansible</span></div></div>
+  <div class="skill"><b>Containers &amp; Orchestration</b><div class="chips"><span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">Kubernetes</span></div></div>
+  <div class="skill"><b>Monitoring</b><div class="chips"><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">PromQL</span><span class="chip">Alerting</span></div></div>
+  <div class="skill"><b>Cloud &amp; Infrastructure as Code</b><div class="chips"><span class="chip">AWS (EC2, S3, VPC, IAM, CloudWatch)</span><span class="chip">Terraform (learning)</span><span class="chip">Azure (learning)</span><span class="chip">GCP (learning)</span></div></div>
   <div class="skill"><b>Scripting &amp; OS</b><div class="chips"><span class="chip">Bash</span><span class="chip">PowerShell</span><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">VMware</span></div></div>
   <div class="skill"><b>Networking &amp; Security</b><div class="chips"><span class="chip">TCP/IP</span><span class="chip">LAN/WAN</span><span class="chip">Routing &amp; Switching</span><span class="chip">Firewalls</span><span class="chip">Wireshark</span><span class="chip">Active Directory</span></div></div>
 </section>
@@ -69,17 +73,24 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:22px}
   <div class="grid">
     <div class="proj"><h3><a href="https://github.com/nileshkatalkar/flask-cicd-pipeline">Flask CI/CD Pipeline</a></h3>
       <div class="tag">GitHub Actions · Docker · Docker Hub</div>
-      <p>Pipeline that tests, builds, and publishes a Docker image automatically on every push.</p></div>
-    <div class="proj"><h3>AWS Infrastructure with Terraform</h3>
-      <div class="tag">Terraform · AWS · coming soon</div>
-      <p>VPC, subnets, EC2, security groups, and S3 provisioned as code.</p></div>
-    <div class="proj"><h3>Containerized App on AWS</h3>
-      <div class="tag">Docker · ECS/EC2 · coming soon</div>
-      <p>Dockerized app deployed behind a load balancer.</p></div>
-    <div class="proj"><h3>Monitoring &amp; Automation</h3>
-      <div class="tag">CloudWatch · Bash · Python · coming soon</div>
-      <p>Dashboards, alarms, and cost-saving scripts for AWS.</p></div>
+      <p>Tests a Flask app, builds a Docker image, and publishes it to Docker Hub automatically on every push.</p></div>
+    <div class="proj"><h3><a href="https://github.com/nileshkatalkar/docker-compose-stack">Docker Compose Stack</a></h3>
+      <div class="tag">Docker Compose · Nginx · Flask · Redis</div>
+      <p>Three-container app on a private network with health checks and a persistent volume.</p></div>
+    <div class="proj"><h3><a href="https://github.com/nileshkatalkar/jenkins-pipeline-demo">Jenkins Pipeline</a></h3>
+      <div class="tag">Jenkins · Jenkinsfile · Docker</div>
+      <p>Pipeline-as-code that tests, builds, and pushes images using credentials stored securely in Jenkins.</p></div>
+    <div class="proj"><h3><a href="https://github.com/nileshkatalkar/kubernetes-flask-demo">Kubernetes Deployment</a></h3>
+      <div class="tag">Kubernetes · kind · kubectl</div>
+      <p>3 replicas with health probes, scaling, rolling updates, and rollback on a multi-node cluster.</p></div>
+    <div class="proj"><h3><a href="https://github.com/nileshkatalkar/monitoring-prometheus-grafana">Monitoring Stack</a></h3>
+      <div class="tag">Prometheus · Grafana · PromQL</div>
+      <p>Dashboards and alert rules for request rate, errors, latency, and app downtime.</p></div>
+    <div class="proj"><h3><a href="https://github.com/nileshkatalkar/ansible-automation">Ansible &amp; Bash Automation</a></h3>
+      <div class="tag">Ansible · Bash · Docker</div>
+      <p>Idempotent playbook that configures two Linux servers, plus a Bash health-check script.</p></div>
   </div>
+  <div class="more">Each project has an architecture diagram, setup steps, screenshots, and a write-up of problems solved. <a href="https://github.com/nileshkatalkar">See all on GitHub →</a></div>
 </section>
 
 <section>
